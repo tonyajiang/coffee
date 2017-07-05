@@ -1,0 +1,19 @@
+<div ng-repeat="coffee in $ctrl.coffees | filter: {id: $ctrl.coffeeId}">
+  <h1>{{coffee.brand}}</br><small>{{coffee.name}}</small></h1>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Reviewer</th>
+      <th>Thoughts</th>
+      <th>Rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="review in coffee.reviews">
+      <td >{{review.reviewer}}</td>
+      <td>{{review.comment}}</td>
+      <td>{{review.rating}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>

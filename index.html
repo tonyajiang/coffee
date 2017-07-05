@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en" ng-app="coffeeApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Local Coffee</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css" />
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="coffee-list/coffee-list.module.js"></script>
+    <script src="coffee-list/coffee-list.component.js"></script>
+    <script src="coffee-detail/coffee-detail.module.js"></script>
+    <script src="coffee-detail/coffee-detail.component.js"></script>
+
+  </head>
+  <body>
+    <a class="btn btn-default" href="index.html" role="button">Home</a>
+    <div ng-view></div>
+  </body>
+</html>
